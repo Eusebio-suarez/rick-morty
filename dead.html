@@ -6,16 +6,24 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Dead Caracters</title>
 </head>
-<body class="bg-gray-900">
-    <header class="p-4">
-        <nav>
-            <ul class="flex space-x-4">
-                <li><a class="text-white text-4xl" href="/index.html">All</a></li>
-                <li><a class="text-white text-4xl" href="/alive.html">Alive</a></li>
-                <li><a class="text-white text-4xl" href="#">Dead</a></li>
-                <li><a class="text-white text-4xl" href="/unknown.html">Unknown</a></li>
-            </ul>
-        </nav>
+<body class="bg-gray-900 flex justify-center min-h-screen font-poppins">
+    <header class="p-6 w-full max-w-xs">
+      <nav>
+        <ul class="flex flex-col gap-4 items-center text-base">
+          <li class="w-full">
+            <a class="block w-full text-green-400 border border-green-400 px-4 py-2 rounded-xl text-center hover:bg-green-400 hover:text-gray-900 transition" href="/index.html">All</a>
+          </li>
+          <li class="w-full">
+            <a class="block w-full text-cyan-400 border border-cyan-400 px-4 py-2 rounded-xl text-center hover:bg-cyan-400 hover:text-gray-900 transition" href="/alive.html">Alive</a>
+          </li>
+          <li class="w-full">
+            <a class="block w-full text-purple-400 border border-purple-400 px-4 py-2 rounded-xl text-center hover:bg-purple-400 hover:text-gray-900 transition" href="#">Dead</a>
+          </li>
+          <li class="w-full">
+            <a class="block w-full text-yellow-400 border border-yellow-400 px-4 py-2 rounded-xl text-center hover:bg-yellow-400 hover:text-gray-900 transition" href="/unknown.html">Unknown</a>
+          </li>
+        </ul>
+      </nav>        
     </header>
-</body>
+  </body>
 </html>
