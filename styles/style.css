@@ -1,0 +1,22 @@
+body{
+    width: 98vw;
+    height: 98vh;
+    margin: 0;
+    height: 0;
+}
+
+#menu {
+    opacity: 0;
+    visibility: hidden;
+    transition: 
+      opacity 0.8s ease, 
+      visibility 0s linear 0.5s;
+}
+  
+#option:hover + #menu,#menu:hover {
+    opacity: 1;
+    visibility: visible;
+    transition:
+      opacity 0.8s ease,
+      visibility 0s linear 0s;
+}
