@@ -20,3 +20,10 @@ body{
       opacity 0.8s ease,
       visibility 0s linear 0s;
 }
+@media (max-width: 400px) {
+  .card {
+    width: 80px;
+    height: auto;
+    padding: 8px;
+  }
+}

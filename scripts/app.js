@@ -34,7 +34,8 @@ async function renderCaracters(url) {
             "transition",
             "duration-300",
             "ease-in-out",
-            "w-[200px]",
+            "w-[155px]",
+            "sm:w-[200px]",
             "justify-between"
         );
         card.innerHTML = `
