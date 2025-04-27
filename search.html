@@ -39,18 +39,16 @@
       </ul>
     </nav>        
   </header>
-  <form 
-    action="" 
-    class="bg-[#1b2338] p-5 rounded-2xl shadow-lg flex items-center space-x-4 mb-8 mt-20 max-w-md mx-auto">
+  <form action="" class=" z-10 flex items-center space-x-2 mb-5 mt-16">
     <input 
       type="text" 
       id="inputElement"
-      placeholder="Name of Character" 
-      class="flex-1 bg-[#0f1629] border border-gray-600 text-white placeholder-gray-400 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition duration-300"
+      placeholder="Name of Caracter" 
+      class="border border-gray-300 rounded-lg px-1 py-1 focus:outline-none focus:ring-2 focus:ring-black transition"
       required>
     <button 
       type="button" 
-      class="bg-cyan-500 p-3 rounded-lg hover:bg-cyan-400 transition-all duration-300"
+      class="bg-black p-2 rounded-lg hover:scale-110 transition-transform"
       onclick="searchCaracter()">
       <svg 
         xmlns="http://www.w3.org/2000/svg" 
@@ -62,13 +60,13 @@
         stroke-width="2" 
         stroke-linecap="round" 
         stroke-linejoin="round" 
-        class="text-white"  >
+        class="text-white">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
         <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
         <path d="M21 21l-6 -6" />
       </svg>
     </button>
-  </form>
+  </form> 
   <div id="container" class="w-full flex flex-wrap justify-center gap-10 pb-10 mt-1.5">
   </div>
   <script src="/scripts/search.js"></script>
