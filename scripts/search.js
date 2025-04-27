@@ -1,22 +1,24 @@
-//etiqueta a que contiene hace visible el menu
-const option = document.getElementById('option');
+// Selecciona todos las etiquetas <a> que son opciones
+const options = document.querySelectorAll("a");
 
-//barra de busqueda
+// Selecciona el formulario
 const form = document.querySelector('form');
 
-//cuando se hace hover al menu la visbilidad de la barra desaparece
-option.addEventListener('mouseenter', () => {
-  form.style.opacity = '0';
-  form.style.visibility = 'hidden';
-  form.style.transition = 'opacity 0.8s ease, visibility 0s linear 0.5s';
+// Para cada etiqueta <a> se agrega el evento que cambia la visibilidad
+options.forEach(option => {
+  option.addEventListener('mouseenter', () => {
+    form.style.opacity = '0';
+    form.style.visibility = 'hidden';
+    form.style.transition = 'opacity 0.8s ease, visibility 0s linear 0.5s';
+  });
+
+  option.addEventListener('mouseleave', () => {
+    form.style.opacity = '1';
+    form.style.visibility = 'visible';
+    form.style.transition = 'opacity 2.3s ease';
+  });
 });
 
-//cuandom se deja de hacer hover la barra se hace visible
-option.addEventListener('mouseleave', () => {
-  form.style.opacity = '1';
-  form.style.visibility = 'visible';
-  form.style.transition = 'opacity 0.5s ease';
-});
 
 //personajes
 let caracters =[]
