@@ -19,10 +19,11 @@ async function renderCaracters(url) {
     await getData(url)
     console.log(caracters)
     caracters.forEach(caracter => {
+        if(caracter.status == "Alive"){
         let card = document.createElement("div");
         card.classList.add(
             "card",
-            "bg-emerald-600", // verde esmeralda
+            "bg-cyan-400",
             "rounded-xl",
             "overflow-hidden",
             "shadow-lg",
@@ -41,21 +42,21 @@ async function renderCaracters(url) {
         card.innerHTML = `
             <img class="w-[120px] h-[120px] object-cover rounded-full" src="${caracter.image}" alt="${caracter.name}">
             <div class = "flex">
-            <h2 class="text-center text-base font-semibold text-blue-300 mt-4 break-words mr-1 ">#${caracter.id}</h2>
-                <h2 class="text-center text-base font-semibold text-blue-400 mt-4 break-words">${caracter.name}</h2>
+                <h2 class="text-center text-base font-semibold text-blue-600 mt-4 break-words mr-1 ">#${caracter.id}</h2>
+                <h2 class="text-center text-base font-semibold text-white mt-4 break-words">${caracter.name}</h2>
             </div>
             <div>
-                <h2 class="text-center text-base font-semibold text-white break-words">${caracter.species}</h2>
+                <h2 class="text-center text-base font-semibold text-blue-700 break-words">${caracter.species}</h2>
                 <h2 class="text-center text-base font-semibold text-yellow-300 break-words">${caracter.gender}</h2>
             </div>
 
         `;
-        container.appendChild(card);
-    });
+        container.appendChild(card)
+    }})
 }
 
 //Renderizar los primero 200 personajes 
 //Cada consulta devuelve 20 personajes
-for (let index = 1; index < 11; index++) {
+for (let index = 1; index < 12; index++) {
     renderCaracters("https://rickandmortyapi.com/api/character/?page="+index)
 }
