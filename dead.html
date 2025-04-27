@@ -9,10 +9,10 @@
 </head>
 <body class="bg-gray-900 flex justify-start min-h-screen font-poppins flex-col items-center">
     <header class="p-6 w-full max-w-xs">
-      <nav>
+      <nav class="absolute w-[250px]">
         <ul class="flex flex-col gap-4 items-center text-base">
           <li class="w-full">
-            <a id="option" class="block w-full text-purple-400 bg-[#06304b] px-4 py-2 rounded-xl text-center hover:bg-purple-400 hover:text-gray-900 transition flex" href="#">Dead
+            <a id="option" class="block w-full text-purple-400 bg-[#06304b] px-4 py-2 rounded-xl text-center hover:bg-purple-400 hover:text-gray-900 transition flex border border-sky-600" href="#">Dead
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2 ml-auto w-6 h-6">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <path d="M4 6l16 0" />
@@ -20,18 +20,18 @@
                 <path d="M4 18l16 0" />
               </svg>
             </a>
-            <ul id="menu">
+            <ul id="menu" class="flex flex-col gap-0.5">
               <li class="w-full">
-                <a class="block w-full text-green-400 px-4 py-2 rounded-xl text-center hover:bg-green-400 hover:text-gray-900 transition" href="/index.html">All</a>
+                <a class="block w-full text-green-400 px-4 py-2 mt-1 rounded-xl text-center bg-[#06304b] border border-sky-400 hover:bg-green-400 hover:text-gray-900 transition" href="/index.html">All</a>
               </li>
               <li class="w-full">
-                <a class="block w-full text-cyan-400 px-4 py-2 rounded-xl text-center hover:bg-cyan-400 hover:text-gray-900 transition" href="/alive.html">Alive</a>
+                <a class="block w-full text-cyan-400 px-4 py-2 rounded-xl text-center bg-[#06304b] border border-sky-400 hover:bg-cyan-400 hover:text-gray-900 transition" href="/alive.html">Alive</a>
               </li>
               <li class="w-full">
-                  <a class="block w-full text-yellow-400 px-4 py-2 rounded-xl text-center hover:bg-yellow-400 hover:text-gray-900 transition" href="/unknown.html">Unknown</a>
+                  <a class="block w-full text-yellow-400 px-4 py-2 rounded-xl text-center bg-[#06304b] border border-sky-400 hover:bg-yellow-400 hover:text-gray-900 transition" href="/unknown.html">Unknown</a>
               </li>
               <li class="w-full">
-                <a class="block w-full text-white px-4 py-2 rounded-xl text-center hover:bg-black hover:text-white transition flex justify-center" href="/search.html">Search
+                <a class="block w-full text-white px-4 py-2 rounded-xl text-center bg-[#06304b] border border-sky-400 hover:bg-black hover:text-white transition flex justify-center" href="/search.html">Search
                   <svg  xmlns="http://www.w3.org/2000/svg"  width="21"  height="21"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search ml-1 mt-0.5">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
@@ -44,7 +44,7 @@
         </ul>
       </nav>         
     </header>
-    <div id="container" class="w-full flex flex-wrap justify-center gap-10 pb-10">
+    <div id="container" class="w-full flex flex-wrap justify-center gap-10 pb-10 mt-16">
     </div>
     <script src="/scripts/dead.js"></script>
   </body>

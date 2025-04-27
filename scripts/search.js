@@ -1,3 +1,23 @@
+//etiqueta a que contiene hace visible el menu
+const option = document.getElementById('option');
+
+//barra de busqueda
+const form = document.querySelector('form');
+
+//cuando se hace hover al menu la visbilidad de la barra desaparece
+option.addEventListener('mouseenter', () => {
+  form.style.opacity = '0';
+  form.style.visibility = 'hidden';
+  form.style.transition = 'opacity 0.8s ease, visibility 0s linear 0.5s';
+});
+
+//cuandom se deja de hacer hover la barra se hace visible
+option.addEventListener('mouseleave', () => {
+  form.style.opacity = '1';
+  form.style.visibility = 'visible';
+  form.style.transition = 'opacity 0.5s ease';
+});
+
 //personajes
 let caracters =[]
 
