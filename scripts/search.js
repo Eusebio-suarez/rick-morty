@@ -63,7 +63,11 @@ function searchCaracter(){
     container.innerHTML=""
     //validar que el input no este vacio
     if (input.value=="") {
-        alert("campo vacio")
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Empty field"
+          });
     }
     else{
     //renderisar los personaje que tienen contienen el nombre
